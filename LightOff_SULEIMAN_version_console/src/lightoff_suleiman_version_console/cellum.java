@@ -11,42 +11,52 @@ package lightoff_suleiman_version_console;
  */
 public class cellum {
     
-    public cellum (boolean a){
-    status =a;
+    public cellum (){
+    etat =false;
     }
     
-    boolean status ;
+    private boolean etat ;
     /**
      * The function changes the status of the light 
      * 
      */
     public void invers(){
-        status=!status;
+        etat=!etat;
     }
     /**
      * The function turn on the light 
      */
-    public void on(){
-    status=true;
+    public void activerCellule(){
+    etat=true;
     }
     /**
      * The function turn off the light 
      */
-     public void off(){
-    status=!true;
+     public void eteindreCellule(){
+    etat=!true;
     }
      /**
       * The function gives the status of light 
       * @return status(boolean) which is true when the light is on 
       */
-     public boolean read (){
-     return status;
+     public boolean getetat (){
+     return etat;
      }
-     public void show (){
-         if(status)
-     System.out.println("light is on");
+     /**
+      * to know if the cell is off 
+      * @return true if the cell is off and false if it is on
+      */
+     public boolean estEteint(){
+     return !etat;
+     }
+     /**
+      * print X if cell is on and O if not
+      */
+     public void tostring(){
+         if(etat)
+     System.out.print("X");
          else 
-                  System.out.println("light is off");
+                  System.out.print("O");
 
      
      }

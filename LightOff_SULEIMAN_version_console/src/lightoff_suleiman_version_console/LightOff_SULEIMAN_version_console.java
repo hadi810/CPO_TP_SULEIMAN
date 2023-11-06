@@ -15,16 +15,25 @@ public class LightOff_SULEIMAN_version_console {
      */
     public static void main(String[] args) {
         
-        cellum a,b ;
-        a =new cellum(true);
-        b =new cellum(true);
-        a.show();
-        b.show();
+        /*cellum a,b ;
+        a =new cellum();
+        b =new cellum();
+        a.tostring();
+        b.tostring();
         a.invers();
-        b.off();
-        a.show();
-        b.show();
-
+        b.eteindreCellule();
+        a.tostring ();
+        b.tostring();*/
+        
+        GrilleDeJeu a;
+        a=new GrilleDeJeu(5,5);
+        a.melangerMatrice(6);
+        a.tostring();
+        a.activerc(3);
+        a.activerl(2);
+        a.tostring();
+        
+       
         
         
     }
