@@ -11,27 +11,15 @@ package lightoff_suleiman_version_console;
 public class LightOff_SULEIMAN_version_console {
 
     /**
-     * zdfd
+     * 
      */
     public static void main(String[] args) {
         
-        /*cellum a,b ;
-        a =new cellum();
-        b =new cellum();
-        a.tostring();
-        b.tostring();
-        a.invers();
-        b.eteindreCellule();
-        a.tostring ();
-        b.tostring();*/
+        partie a =new partie(7,7);
+        a.initialiser_hard();
+        a.lancer();
         
-        GrilleDeJeu a;
-        a=new GrilleDeJeu(5,5);
-        a.melangerMatrice(6);
-        a.tostring();
-        a.activerc(3);
-        a.activerl(2);
-        a.tostring();
+ 
         
        
         
